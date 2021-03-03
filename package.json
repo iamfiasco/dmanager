@@ -1,0 +1,25 @@
+{
+  "name": "dmanager",
+  "version": "1.0.0",
+  "description": "A async downloading manager created with node, blessed and love.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamfiasco/dmanager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamfiasco/dmanager/issues"
+  },
+  "homepage": "https://github.com/iamfiasco/dmanager#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "winston": "^3.3.3"
+  }
+}
