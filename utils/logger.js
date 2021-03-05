@@ -1,13 +1,14 @@
-require(".env").config()
+require("dotenv").config()
 const ws = require("winston")
 
-const logger = ws.createLogger({
-  transports: [
-    new ws.transport.File({filename: process.env.LOGPATH}),
-    new ws.transports.Console()
-  ]
-})
-
+function getLogger(){
+  return ws.createLogger({
+    transports: [
+      new ws.transport.File({filename: process.env.LOGPATH}),
+      new ws.transports.Console()
+    ]
+  })
+}
 module.exports = {
-  logger
+  getLogger,
 }
